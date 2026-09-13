@@ -1,0 +1,227 @@
+@import "colors.css";
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: "Iosevka Nerd Font Propo";
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#window {
+    color: @on_surface;
+}
+
+window#waybar > box {
+    background-color: @surface;
+    color: @on_surface;
+}
+
+tooltip { 
+    background: @surface_container;
+    border: 1px solid @outline_variant;
+    border-radius: 0px;
+}
+
+tooltip label {
+	color: @on_surface;
+	padding: 3px;
+}
+
+#tray menu {
+	background-color: @surface_container;
+	padding: 6px;
+}
+
+
+
+#workspaces {
+	margin-right: 5px;
+
+}
+
+#workspaces button {
+    background-color: transparent;
+    color: @primary;
+    padding: 0 6px;
+    margin: 0 1.5px;
+    min-width: 9px;
+}
+
+#workspaces button.empty {
+    background-color: transparent;
+    color: @on_surface;
+}
+
+#workspaces button:hover {
+   color: @secondary;
+}
+
+#workspaces button.urgent {
+
+	color: @error;
+
+}
+
+#workspaces button.focused, #workspaces button.active {
+
+	color: @primary;
+
+}
+
+
+#clock,
+#battery,
+#backlight,
+#network,
+#pulseaudio,
+#tray,
+#idle_inhibitor,
+#power-profiles-daemon,
+
+
+#clock {
+    background-color: transparent;
+    color: @on_surface;
+}
+
+#battery, #battery.charging, #battery.plugged{
+    border-radius: 99px;
+    margin-right: 15px;
+    color: @on_surface;
+}
+
+#bluetooth {
+    background-color: transparent;
+    margin-right: 15px;
+    color: @on_surface;
+}
+
+
+
+#power-profiles-daemon {
+}
+
+#power-profiles-daemon.performance {
+    background-color: transparent;
+    margin-right: 15px;
+    color: @on_surface;
+}
+
+#power-profiles-daemon.balanced {
+    background-color: transparent;
+    margin-right: 15px;
+    color: @on_surface;
+}
+
+#power-profiles-daemon.power-saver {
+    background-color: transparent;
+    margin-right: 15px;
+    color: @on_surface;
+}
+
+
+#backlight {
+    background-color: transparent;
+    margin-right: 15px;
+    color: @on_surface;
+}
+
+#network, #network.disconnected {
+    background-color: transparent;
+    color: @on_surface;
+    margin-right: 15px;
+}
+
+
+#pulseaudio, #pulseaudio.muted {
+    color: @on_surface;
+    margin-right: 15px;
+}
+
+
+
+#tray {
+    margin-left: 15px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}
+
+#idle_inhibitor {
+    background-color: transparent;
+    margin-right: 15px;
+    color: @on_surface;
+}
+
+#idle_inhibitor.activated {
+    background-color: transparent;
+    margin-right: 15px;
+    color: @on_surface;
+}
+
+
+#privacy {
+	color: @on_surface;
+        margin-right: 15px;
+}
+
+#privacy-item {
+    color: @tertiary;
+    margin-left: 10px;
+}
+
+#privacy-item.screenshare {
+}
+
+#privacy-item.audio-in {
+}
+
+#privacy-item.audio-out {
+}
+
+#custom-notification {
+    color: @on_surface;
+    margin-right: 5px;
+}
+
+#custom-power{
+    color: @on_surface;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+#netciao {
+
+    color: @on_surface;
+}
+
+#powera {
+
+	
+	background-color: @surface_container;
+	border-radius: 99px;
+	color: @on_surface;
+
+}
+
+#clocko{
+
+
+	color: @on_surface;
+}
+
+#rogo {
+	background-color: @surface_container;
+	border-radius: 99px;
+	color: @on_surface;
+}
+
+#tray-expander {
+	color: @on_surface;
+	margin-right: 15px;
+}
